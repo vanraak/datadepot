@@ -21,6 +21,7 @@ datasets = {
     "mpg": "Auto MPG dataset.",
     "redwines": "Red wine quality dataset.",
     "risk": "Risk analysis dataset.",
+    "transcripts": "Earnings Conference Calls transcripts dataset."
     "whitewines": "White wine quality dataset."
 }
 
