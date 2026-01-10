@@ -48,20 +48,20 @@ The following datasets are included:
 - caravan
 - cereal
 - churn
-- churncredit
-- churntel
+- churn_ibm
+- churn_tel
 - corona
 - diamonds
 - drug
 - gapminder
 - house
-- houseprice
+- house_price
 - insurance
 - marketing
 - mpg
-- redwines
+- red_wines
 - risk
-- whitewines
+- white_wines
 
 **Documentation**
 
