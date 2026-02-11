@@ -33,6 +33,6 @@ include = ["datadepot*"]
 exclude = ["csv", "pickle", "sourcedata"]
 
 [tool.setuptools_scm]
-version_scheme = "guess-next-dev"
+version_scheme = "tag"
 local_scheme = "no-local-version"
 write_to = "datadepot/_version.py"
