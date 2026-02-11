@@ -3,7 +3,7 @@
 
 **Package ‘datadepot’**
 
-**Title** \`\`DataDepot’’
+**Title** DataDepot
 
 **Description**
 
