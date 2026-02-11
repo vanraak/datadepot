@@ -21,6 +21,7 @@ datasets = {
     "mpg": "Auto MPG dataset.",
     "red_wines": "Red wine quality dataset.",
     "risk": "Risk analysis dataset.",
+    "transcripts": "Earnings conference call transcripts",
     "white_wines": "White wine quality dataset.",
 }
 
@@ -34,7 +35,7 @@ def load(name: str) -> pd.DataFrame:
         canonical_name = lookup[name]  # get the actual dataset key (with underscore)
         try:
             with (
-                importlib.resources.files("dsf.data")
+                importlib.resources.files("datavault.data")
                 .joinpath(f"{canonical_name}.pkl")
                 .open("rb") as f
             ):
