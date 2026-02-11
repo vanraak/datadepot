@@ -35,7 +35,7 @@ def load(name: str) -> pd.DataFrame:
         canonical_name = lookup[name]  # get the actual dataset key (with underscore)
         try:
             with (
-                importlib.resources.files("datavault.data")
+                importlib.resources.files("datadepot.data")
                 .joinpath(f"{canonical_name}.pkl")
                 .open("rb") as f
             ):

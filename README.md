@@ -1,15 +1,15 @@
-# Package `dsf`
+# Package `datadepot`
 
 
-**Package ‘dsf’**
+**Package ‘datadepot’**
 
-**Title** \`\`Data Science Foudations’’
+**Title** \`\`DataDepot’’
 
 **Description**
 
-The **dsf** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
+The **datadepot** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
 
-**URL** <https://github.com/vanraak/dsf>
+**URL** <https://github.com/vanraak/datadepot>
 
 **Depends** Python (\>= 3.8) and Pandas (\>2.0)
 
@@ -25,18 +25,18 @@ The **dsf** package provides a collection of datasets used in the book `Data Sci
 
 **Installation**
 
-    pip install dsf
+    pip install datadepot
 
 **Usage**
 
-    import dsf
-    df=dsf.load('<dataset>')
+    import datadepot
+    df=datadepot.load('<dataset>')
 
 Replace <dataset> with the name of the dataset, such as ‘bank’, ‘house’, or ‘churn’.
 
 **Example**
 
-    df=dsf.load('bank') # Load the bank dataset.
+    df=datadepot.load('bank') # Load the bank dataset.
 
 **Datasets**
 
@@ -66,4 +66,4 @@ The following datasets are included:
 **Documentation**
 
 The full documentation is available at:
-<https://github.com/vanraak/dsf/blob/main/README.pdf>
+<https://github.com/vanraak/datadepot/blob/main/README.pdf>
