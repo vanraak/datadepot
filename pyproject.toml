@@ -28,11 +28,11 @@ urls = { "Homepage" = "https://github.com/vanraak/datadepot" }
 include-package-data = true
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["datadepot"]
 include = ["datadepot*"]
 exclude = ["csv", "pickle", "sourcedata"]
 
 [tool.setuptools_scm]
-version_scheme = "post-release"
+version_scheme = "guess-next-dev"
 local_scheme = "no-local-version"
 write_to = "datadepot/_version.py"
