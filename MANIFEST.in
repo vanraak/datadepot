@@ -1,3 +1,4 @@
 include README.md
 include LICENSE
+include datadepot/*.py
 recursive-include datadepot/data *
