@@ -14,23 +14,32 @@ jobs:
       contents: read
 
     steps:
+      # Checkout the repo with full history (needed for setuptools_scm)
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
 
+      # Upgrade build tools, but omit setuptools_scm from install
       - name: Install build tools
-        run: pip install --upgrade build setuptools_scm wheel
+        run: pip install --upgrade pip build setuptools wheel
 
+      # Clean previous builds
       - name: Clean previous builds
         run: rm -rf build dist *.egg-info
 
+      # Build package
       - name: Build package
+        env:
+          # Force the version for setuptools_scm
+          SETUPTOOLS_SCM_PRETEND_VERSION: ${{ github.ref_name }}
         run: python -m build
 
+      # Publish to PyPI
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
