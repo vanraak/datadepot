@@ -28,7 +28,6 @@ urls = { "Homepage" = "https://github.com/vanraak/datadepot" }
 include-package-data = true
 
 [tool.setuptools.packages.find]
-where = ["datadepot"]
 include = ["datadepot*"]
 exclude = ["csv", "pickle", "sourcedata"]
 
