@@ -24,7 +24,10 @@ jobs:
           python-version: 3.11
 
       - name: Install build tools
-        run: pip install build setuptools_scm wheel
+        run: pip install --upgrade build setuptools_scm wheel
+
+      - name: Clean previous builds
+        run: rm -rf build dist *.egg-info
 
       - name: Build package
         run: python -m build
