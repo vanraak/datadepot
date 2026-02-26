@@ -34,12 +34,10 @@ def load(name: str) -> pd.DataFrame:
     if name in lookup:
         canonical_name = lookup[name]  # get the actual dataset key (with underscore)
         try:
-            with (
-                importlib.resources.files("datadepot.data")
-                .joinpath(f"{canonical_name}.csv.gz")
-                .open("rt", encoding="utf-8") as f
-            ):
-                return pd.read_csv(f, sep=",")
+            csv_file = importlib.resources.files("datadepot.data").joinpath(
+                f"{canonical_name}.csv.gz"
+            )
+            return pd.read_csv(csv_file, sep=",", encoding="utf-8", compression="gzip")
         except Exception as e:
             raise RuntimeError(f"Failed to load dataset '{canonical_name}': {e}")
     else:
