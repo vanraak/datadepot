@@ -36,10 +36,10 @@ def load(name: str) -> pd.DataFrame:
         try:
             with (
                 importlib.resources.files("datadepot.data")
-                .joinpath(f"{canonical_name}.pkl")
-                .open("rb") as f
+                .joinpath(f"{canonical_name}.csv.gz")
+                .open("rt", encoding="utf-8") as f
             ):
-                return pd.read_pickle(f)
+                return pd.read_csv(f, sep=",")
         except Exception as e:
             raise RuntimeError(f"Failed to load dataset '{canonical_name}': {e}")
     else:
