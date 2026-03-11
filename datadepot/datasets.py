@@ -170,7 +170,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "south_german_credit": {
-        "description": "700 good and 300 bad credits with 20 predictor variables. Data from 1973 to 1975. Stratified sample from actual credits with bad credits heavily oversampled. A cost matrix can be used.",
+        "description": "700 good and 300 bad credits with 20 predictor variables. Data from 1973 to 1975.",
         "source": "UCI  Irvine Machine Learning Repository",
         "creators": "UCI Irvine and Hans Hofmann (original author)",
         "url": "https://doi.org/10.24432/C5QG88",

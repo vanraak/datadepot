@@ -47,7 +47,7 @@ DATASETS = {
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
     },
-    "corona": {
+    "covid": {
         "description": "COVID-19 related dataset.",
         "creators": "European Centre for Disease Prevention and Control",
         "url": "https://data.europa.eu/data/datasets/covid-19-coronavirus-data-daily-up-to-14-december-2020",
