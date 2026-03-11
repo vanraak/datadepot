@@ -52,6 +52,7 @@ DATASETS = {
     },
     "covid": {
         "description": "COVID-19 related dataset.",
+        "source": "European Centre for Disease Prevention and Control",
         "creators": "European Centre for Disease Prevention and Control",
         "url": "https://data.europa.eu/data/datasets/covid-19-coronavirus-data-daily-up-to-14-december-2020",
         "license": "CC0: Public Domain",
@@ -75,7 +76,7 @@ DATASETS = {
     },
     "drug": {
         "description": "Drug classification dataset.",
-        "source": "Liver",
+        "source": "LiveR - R Package",
         "creators": "Reza Mohammadi",
         "url": "https://cran.r-project.org/web/packages/liver/",
         "license": "GPL-3",
@@ -91,7 +92,7 @@ DATASETS = {
     },
     "hotel_city": {
         "description": "Hotel booking demand datasets: City Hotels",
-        "source": "",
+        "source": "Antonio, de Almeida and Nunes (2019)",
         "creators": "Nuno Antonio, Ana de Almeida, and Luis Nunes",
         "url": "https://doi.org/10.1016/j.dib.2018.11.126",
         "license": "CC BY 4.0",
@@ -99,7 +100,7 @@ DATASETS = {
     },
     "hotel_resort": {
         "description": "Hotel booking demand datasets: Resort Hotels",
-        "source": "",
+        "source": "Antonio, de Almeida and Nunes (2019)",
         "creators": "Nuno Antonio, Ana de Almeida, and Luis Nunes",
         "url": "https://doi.org/10.1016/j.dib.2018.11.126",
         "license": "CC BY 4.0",
