@@ -66,6 +66,14 @@ DATASETS = {
         "license": "Database Contents License (DbCL) v1.0",
         "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
     },
+    "cpu": {
+        "description": "Synthetic dataset of CPU pricing and performance characteristics.",
+        "source": "DataDepot",
+        "creators": "J. van Raak",
+        "url": "hhttps://github.com/vanraak/datadepot",
+        "license": "CC BY 4.0",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    },
     "diamonds": {
         "description": "Diamonds dataset",
         "source": "ggplot2",
