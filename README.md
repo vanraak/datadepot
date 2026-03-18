@@ -11,7 +11,7 @@ The **datadepot** package provides a collection of datasets used in the book `Da
 
 **URL** <https://github.com/vanraak/datadepot>
 
-**Depends** Python (\>= 3.8) and Pandas (\>2.0)
+**Depends** Python (\>= 3.10) and Pandas (\>2.0)
 
 **License** GPL (\>= 2)
 
@@ -27,12 +27,16 @@ The **datadepot** package provides a collection of datasets used in the book `Da
 
     pip install datadepot
 
+    or:
+
+    conda install conda-forge::datadepot
+
 **Usage**
 
     import datadepot
-    df=datadepot.load('<dataset>')
+    df=datadepot.load("<dataset>")
 
-Replace <dataset> with the name of the dataset, such as ‘bank’, ‘house’, or ‘churn’.
+Replace <dataset> with the name of the dataset, such as "bank", "house", or "churn".
 
 **Example**
 
@@ -43,24 +47,28 @@ Replace <dataset> with the name of the dataset, such as ‘bank’, ‘house’,
 The following datasets are included:
 
 - adult
-- advertising
 - bank
-- caravan
-- cereal
+- cereals
 - churn
 - churn_ibm
-- churn_tel
-- corona
+- churn_mlc
+- covid
+- credit
+- credit_card
 - diamonds
 - drug
 - gapminder
+- hotel_city
+- hotel_resort
 - house
 - house_price
 - insurance
-- marketing
+- las_vegas
+- loans
+- machine_failure
 - mpg
 - red_wines
-- risk
+- vehicles
 - white_wines
 
 **Documentation**
