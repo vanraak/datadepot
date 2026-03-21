@@ -186,7 +186,7 @@ DATASETS = {
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
-    "vehicles": {
+    "vehicle": {
         "description": "Data on car prices, obtained from Car Dekho.",
         "source": "Kaggle",
         "creators": "Nehal Birla, Nishant Verma and Nikhil Kushwaha",
