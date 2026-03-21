@@ -18,7 +18,7 @@ DATASETS = {
         "license": "Creative Commons Attribution 4.0 International",
         "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
     },
-    "cereals": {
+    "cereal": {
         "description": "Breakfast Cereal Data",
         "source": "American Statistical Association",
         "creators": "1993 ASA Statistical Graphics Expositio",
@@ -70,7 +70,7 @@ DATASETS = {
         "description": "Synthetic dataset of CPU pricing and performance characteristics.",
         "source": "DataDepot",
         "creators": "J. van Raak",
-        "url": "hhttps://github.com/vanraak/datadepot",
+        "url": "https://github.com/vanraak/datadepot",
         "license": "CC BY 4.0",
         "license_url": "http://creativecommons.org/licenses/by/4.0/",
     },
@@ -154,7 +154,7 @@ DATASETS = {
         "license": "CC BY 4.0",
         "license_url": "http://creativecommons.org/licenses/by/4.0/",
     },
-    "loans": {
+    "loan": {
         "description": "The loan approval dataset is a collection of financial records and associated information used to determine the eligibility of individuals or organizations for obtaining loans from a lending institution.",
         "source": "Kaggle",
         "creators": "KAI",
@@ -199,6 +199,14 @@ DATASETS = {
         "source": "UCI  Irvine Machine Learning Repository",
         "creators": "",
         "url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    },
+    "wholesale": {
+        "description": "Wholesale customers dataset.",
+        "source": "UCI  Irvine Machine Learning Repository",
+        "creators": "Margarida Cardoso",
+        "url": "https://archive.ics.uci.edu/dataset/292/wholesale+customers",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
