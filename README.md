@@ -48,7 +48,7 @@ The following datasets are included:
 
 - adult
 - bank
-- cereals
+- cereal
 - churn
 - churn_ibm
 - churn_mlc
@@ -64,12 +64,13 @@ The following datasets are included:
 - house_price
 - insurance
 - las_vegas
-- loans
+- loan
 - machine_failure
 - mpg
 - red_wines
-- vehicles
+- vehicle
 - white_wines
+- wholesale
 
 **Documentation**
 
