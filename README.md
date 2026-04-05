@@ -17,7 +17,7 @@ The **datadepot** package provides a collection of datasets used in the book `Da
 
 **Repository** Pypi
 
-**Authors** Jeroen van Raak and Reza Mohammadi
+**Authors** Jeroen van Raak
 
 **Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
 
@@ -55,6 +55,7 @@ The following datasets are included:
 - covid
 - credit
 - credit_card
+- cpu
 - diamonds
 - drug
 - gapminder
