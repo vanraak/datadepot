@@ -67,7 +67,7 @@ DATASETS = {
         "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
     },
     "cpu": {
-        "description": "Synthetic dataset of CPU pricing and performance characteristics.",
+        "description": "Dataset of CPU pricing and performance characteristics.",
         "source": "DataDepot",
         "creators": "J. van Raak",
         "url": "https://github.com/vanraak/datadepot",
