@@ -5,6 +5,9 @@
 
 **Title** DataDepot
 
+![](https://raw.githubusercontent.com/vanraak/datadepot/main/logo_small.png)
+
+
 **Description**
 
 The **datadepot** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
