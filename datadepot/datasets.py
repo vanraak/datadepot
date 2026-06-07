@@ -1,5 +1,7 @@
 import pandas as pd
 import importlib.resources
+from importlib.resources import files
+import geopandas as gpd
 
 DATASETS = {
     "adult": {
@@ -15,6 +17,14 @@ DATASETS = {
         "source": "UCI  Irvine Machine Learning Repository",
         "creators": "S. Moro, P. Rita and P. Cortez",
         "url": "https://archive.ics.uci.edu/ml/datasets/bank+marketing",
+        "license": "Creative Commons Attribution 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+    },
+    "bike_sharing": {
+        "description": "Seoul Bike Sharing Demand dataset.",
+        "source": "UCI  Irvine Machine Learning Repository",
+        "creators": "unknown",
+        "url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
         "license": "Creative Commons Attribution 4.0 International",
         "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
     },
@@ -178,6 +188,14 @@ DATASETS = {
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
+    "nyc_taxi": {
+        "description": "NYC Yellow Taxi Zones dataset.",
+        "source": "NYC Taxi & Limousine Commission",
+        "creators": "NYC Taxi & Limousine Commission",
+        "url": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+        "license": "NYC Open Data",
+        "license_url": "https://www.nyc.gov/main/terms-of-use",
+    },
     "red_wines": {
         "description": "Red wine quality dataset.",
         "source": "UCI  Irvine Machine Learning Repository",
@@ -299,3 +317,8 @@ def dataset_table() -> str:
 
 def list_datasets():
     return list(DATASETS.keys())
+
+
+def load_zones():
+    path = files("datadepot").joinpath("data/taxi_zones.gpkg")
+    return gpd.read_file(path)

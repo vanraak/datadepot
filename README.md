@@ -51,6 +51,7 @@ The following datasets are included:
 
 - adult
 - bank
+- bike_sharing
 - cereal
 - churn
 - churn_ibm

@@ -1,6 +1,6 @@
 # __init__.py
 from ._version import __version__
-from .datasets import load, dataset_table, info
+from .datasets import load, dataset_table, info, load_zones
 
 
 def version():
