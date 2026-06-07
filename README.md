@@ -72,6 +72,7 @@ The following datasets are included:
 - loan
 - machine_failure
 - mpg
+- nyc_taxi
 - red_wines
 - vehicle
 - white_wines
