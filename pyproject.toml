@@ -35,3 +35,6 @@ exclude = ["csv", "pickle", "sourcedata"]
 version_scheme = "post-release"
 local_scheme = "no-local-version"
 write_to = "datadepot/_version.py"
+
+[project.optional-dependencies]
+geo = ["geopandas"]

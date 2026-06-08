@@ -1,7 +1,5 @@
 import pandas as pd
-import importlib.resources
 from importlib.resources import files
-import geopandas as gpd
 
 DATASETS = {
     "adult": {
@@ -252,9 +250,7 @@ def load(name: str) -> pd.DataFrame:
     canonical_name = _lookup_name(name)
 
     try:
-        csv_file = importlib.resources.files("datadepot.data").joinpath(
-            f"{canonical_name}.csv.gz"
-        )
+        csv_file = files("datadepot.data").joinpath(f"{canonical_name}.csv.gz")
         return pd.read_csv(csv_file, sep=",", encoding="utf-8", compression="gzip")
     except Exception as e:
         raise RuntimeError(f"Failed to load dataset '{canonical_name}': {e}")
@@ -320,5 +316,13 @@ def list_datasets():
 
 
 def load_zones():
+    try:
+        import geopandas as gpd
+    except ImportError:
+        raise ImportError(
+            "load_zones() requires the optional dependency 'geopandas'. "
+            "Please install geopandas before using this function."
+        )
+
     path = files("datadepot").joinpath("data/taxi_zones.gpkg")
     return gpd.read_file(path)
