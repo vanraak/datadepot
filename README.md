@@ -20,9 +20,7 @@ The **datadepot** package provides a collection of datasets used in the book `Da
 
 **Repository** Pypi
 
-**Authors** Jeroen van Raak
-
-**Maintainer** Jeroen van Raak, <j.j.f.vanraak@uva.nl>
+**Author** Jeroen van Raak
 
 **NeedsCompilation** no
 

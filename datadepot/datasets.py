@@ -18,6 +18,14 @@ DATASETS = {
         "license": "Creative Commons Attribution 4.0 International",
         "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
     },
+    "bicycle_counts": {
+        "description": "Daily total of bike counts for East River Bridges.",
+        "source": "NYC OpenData",
+        "creators": "Department of Transportation (DOT)",
+        "url": "https://data.cityofnewyork.us/Transportation/Bicycle-Counts-for-East-River-Bridges-Historical-/gua4-p9wg/about_data",
+        "license": "NYC Open Data",
+        "license_url": "https://www.nyc.gov/main/terms-of-use",
+    },
     "bike_sharing": {
         "description": "Seoul Bike Sharing Demand dataset.",
         "source": "UCI  Irvine Machine Learning Repository",
