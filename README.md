@@ -72,6 +72,7 @@ The following datasets are included:
 - machine_failure
 - mpg
 - nyc_taxi
+- online_shoppers
 - red_wines
 - vehicle
 - white_wines

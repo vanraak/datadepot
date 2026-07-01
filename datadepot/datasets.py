@@ -12,7 +12,7 @@ DATASETS = {
     },
     "bank": {
         "description": "Bank marketing dataset.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "S. Moro, P. Rita and P. Cortez",
         "url": "https://archive.ics.uci.edu/ml/datasets/bank+marketing",
         "license": "Creative Commons Attribution 4.0 International",
@@ -28,7 +28,7 @@ DATASETS = {
     },
     "bike_sharing": {
         "description": "Seoul Bike Sharing Demand dataset.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "unknown",
         "url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
         "license": "Creative Commons Attribution 4.0 International",
@@ -92,7 +92,7 @@ DATASETS = {
     },
     "credit": {
         "description": "700 good and 300 bad credits with 20 predictor variables. Data from 1973 to 1975.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "UCI Irvine and Hans Hofmann (original author)",
         "url": "https://doi.org/10.24432/C5QG88",
         "license": "CC BY 4.0",
@@ -188,7 +188,7 @@ DATASETS = {
     },
     "mpg": {
         "description": "Auto MPG dataset.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "",
         "url": "https://archive.ics.uci.edu/ml/datasets/auto+mpg",
         "license": "CC BY 4.0",
@@ -202,9 +202,17 @@ DATASETS = {
         "license": "NYC Open Data",
         "license_url": "https://www.nyc.gov/main/terms-of-use",
     },
+    "online_shoppers": {
+        "description": "Online Shoppers Purchasing Intention dataset.",
+        "source": "UC Irvine Machine Learning Repository",
+        "creators": "C. Sakar and Yomi Kastro",
+        "url": "https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+    },
     "red_wines": {
         "description": "Red wine quality dataset.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "",
         "url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
         "license": "CC BY 4.0",
@@ -220,7 +228,7 @@ DATASETS = {
     },
     "white_wines": {
         "description": "White wine quality dataset.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "",
         "url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
         "license": "CC BY 4.0",
@@ -228,7 +236,7 @@ DATASETS = {
     },
     "wholesale": {
         "description": "Wholesale customers dataset.",
-        "source": "UCI  Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "Margarida Cardoso",
         "url": "https://archive.ics.uci.edu/dataset/292/wholesale+customers",
         "license": "CC BY 4.0",
