@@ -4,11 +4,11 @@ from importlib.resources import files
 DATASETS = {
     "adult": {
         "description": "Adult census income dataset.",
-        "source": "UCI Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "Barry Becker and Ronny Kohavi",
         "url": "https://archive.ics.uci.edu/dataset/2/adult",
         "license": "Creative Commons Attribution 4.0 International",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "bank": {
         "description": "Bank marketing dataset.",
@@ -16,15 +16,15 @@ DATASETS = {
         "creators": "S. Moro, P. Rita and P. Cortez",
         "url": "https://archive.ics.uci.edu/ml/datasets/bank+marketing",
         "license": "Creative Commons Attribution 4.0 International",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "bicycle_counts": {
         "description": "Daily total of bike counts for East River Bridges.",
         "source": "NYC OpenData",
         "creators": "Department of Transportation (DOT)",
         "url": "https://data.cityofnewyork.us/Transportation/Bicycle-Counts-for-East-River-Bridges-Historical-/gua4-p9wg/about_data",
-        "license": "NYC Open Data",
-        "license_url": "https://www.nyc.gov/main/terms-of-use",
+        "license": "New York City Open Data Terms of Use",
+        "license_url": "https://data.cityofnewyork.us/stories/s/Terms-of-Use/k9k7-3cje/",
     },
     "bike_sharing": {
         "description": "Seoul Bike Sharing Demand dataset.",
@@ -32,12 +32,12 @@ DATASETS = {
         "creators": "unknown",
         "url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
         "license": "Creative Commons Attribution 4.0 International",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "cereal": {
         "description": "Breakfast Cereal Data",
         "source": "American Statistical Association",
-        "creators": "1993 ASA Statistical Graphics Expositio",
+        "creators": "1993 ASA Statistical Graphics Exposition",
         "url": "https://community.amstat.org/stat-computing/data-expo/data-expo-1993",
         "license": "unknown",
         "license_url": "unknown",
@@ -52,7 +52,7 @@ DATASETS = {
     },
     "churn_ibm": {
         "description": "Telecom churn dataset (IBM).",
-        "source": "IBM Sample Data",
+        "source": "IBM Public Repository",
         "creators": "IBM",
         "url": "https://github.com/IBM/telco-customer-churn-on-icp4d",
         "license": "Apache 2.0",
@@ -61,7 +61,7 @@ DATASETS = {
     "churn_mlc": {
         "description": "Telecom churn dataset (MLC).",
         "source": "OpenML",
-        "creators": "Lennart Purucker",
+        "creators": "Unknown",
         "url": "https://openml.org/d/46915",
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
@@ -77,7 +77,7 @@ DATASETS = {
     "credit_card": {
         "description": "Anonymized credit card transactions labeled as fraudulent or genuine",
         "source": "Kaggle",
-        "creators": "Machine Learning Group - ULB and Andrea",
+        "creators": "Machine Learning Group - ULB",
         "url": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
         "license": "Database Contents License (DbCL) v1.0",
         "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
@@ -85,7 +85,7 @@ DATASETS = {
     "cpu": {
         "description": "Dataset of CPU pricing and performance characteristics.",
         "source": "DataDepot",
-        "creators": "J. van Raak",
+        "creators": "-",
         "url": "https://github.com/vanraak/datadepot",
         "license": "CC BY 4.0",
         "license_url": "http://creativecommons.org/licenses/by/4.0/",
@@ -93,18 +93,19 @@ DATASETS = {
     "credit": {
         "description": "700 good and 300 bad credits with 20 predictor variables. Data from 1973 to 1975.",
         "source": "UC Irvine Machine Learning Repository",
-        "creators": "UCI Irvine and Hans Hofmann (original author)",
+        "creators": "Hans Hofmann",
         "url": "https://doi.org/10.24432/C5QG88",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "diamonds": {
         "description": "Diamonds dataset",
-        "source": "ggplot2",
-        "creators": "ggplot2",
+        "source": "ggplot2 package",
+        "creators": "Unknown",
         "url": "https://ggplot2.tidyverse.org/reference/diamonds.html",
         "license": "MIT",
         "license_url": "https://ggplot2.tidyverse.org/LICENSE.html",
+        "citation": "Wickham H (2016). ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. ISBN 978-3-319-24277-4",
     },
     "drug": {
         "description": "Drug classification dataset.",
@@ -124,7 +125,7 @@ DATASETS = {
     },
     "hotel_city": {
         "description": "Hotel booking demand datasets: City Hotels",
-        "source": "Antonio, de Almeida and Nunes (2019)",
+        "source": "Data in Brief",
         "creators": "Nuno Antonio, Ana de Almeida, and Luis Nunes",
         "url": "https://doi.org/10.1016/j.dib.2018.11.126",
         "license": "CC BY 4.0",
@@ -132,7 +133,7 @@ DATASETS = {
     },
     "hotel_resort": {
         "description": "Hotel booking demand datasets: Resort Hotels",
-        "source": "Antonio, de Almeida and Nunes (2019)",
+        "source": "Data in Brief",
         "creators": "Nuno Antonio, Ana de Almeida, and Luis Nunes",
         "url": "https://doi.org/10.1016/j.dib.2018.11.126",
         "license": "CC BY 4.0",
@@ -140,7 +141,7 @@ DATASETS = {
     },
     "house": {
         "description": "Real Estate Valuation",
-        "source": "UCI Irvine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "I-Cheng Yeh",
         "url": "https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set",
         "license": "CC BY 4.0",
@@ -149,7 +150,7 @@ DATASETS = {
     "house_price": {
         "description": "House price dataset.",
         "source": "Kaggle",
-        "creators": "Kaggle",
+        "creators": "Dean De Cock",
         "url": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data",
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
@@ -164,7 +165,7 @@ DATASETS = {
     },
     "las_vegas": {
         "description": "The dataset consists of quantitative and qualitative features derived from online reviews of 21 hotels on the Las Vegas Strip, collected from TripAdvisor.",
-        "source": "UC Irivine Machine Learning Repository",
+        "source": "UC Irvine Machine Learning Repository",
         "creators": "S. Moro, P. Rita and J. Coelho",
         "url": "https://doi.org/10.24432/C5QG7W",
         "license": "CC BY 4.0",
@@ -173,7 +174,7 @@ DATASETS = {
     "loan": {
         "description": "The loan approval dataset is a collection of financial records and associated information used to determine the eligibility of individuals or organizations for obtaining loans from a lending institution.",
         "source": "Kaggle",
-        "creators": "KAI",
+        "creators": "Unknown",
         "url": "https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset",
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
@@ -189,26 +190,26 @@ DATASETS = {
     "mpg": {
         "description": "Auto MPG dataset.",
         "source": "UC Irvine Machine Learning Repository",
-        "creators": "",
+        "creators": "R. Quinlan",
         "url": "https://archive.ics.uci.edu/ml/datasets/auto+mpg",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "nyc_taxi": {
         "description": "NYC Yellow Taxi Zones dataset.",
-        "source": "NYC Taxi & Limousine Commission",
+        "source": "NYC TLC Trip Record Data",
         "creators": "NYC Taxi & Limousine Commission",
         "url": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
-        "license": "NYC Open Data",
+        "license": "NYC.gov Terms of Use",
         "license_url": "https://www.nyc.gov/main/terms-of-use",
     },
     "online_shoppers": {
         "description": "Online Shoppers Purchasing Intention dataset.",
         "source": "UC Irvine Machine Learning Repository",
-        "creators": "C. Sakar and Yomi Kastro",
+        "creators": "C. Sakar and Y. Kastro",
         "url": "https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset",
         "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "red_wines": {
         "description": "Red wine quality dataset.",
@@ -247,7 +248,7 @@ DATASETS = {
 
 def _normalize(name: str) -> str:
     """Normalize dataset names for flexible lookup."""
-    return name.strip().lower().replace("_", "")
+    return name.strip().lower().replace("_", "").replace("-", "")
 
 
 def _lookup_name(name: str) -> str:
@@ -263,6 +264,13 @@ def _lookup_name(name: str) -> str:
 
 def load(name: str) -> pd.DataFrame:
     """Load a dataset as a pandas DataFrame."""
+
+    if _normalize(name) in ["mnist", "fashionmnist", "fashion"]:
+        raise RuntimeError(
+            f"Dataset '{name}' is not included in datadepot. "
+            "Please load this dataset using tensorflow.keras instead."
+        )
+
     canonical_name = _lookup_name(name)
 
     try:
@@ -288,6 +296,7 @@ def info(name: str, return_dict: bool = False) -> dict | None:
     dict or None
         Dataset metadata if return_dict=True, otherwise None.
     """
+
     canonical_name = _lookup_name(name)
     meta = DATASETS[canonical_name]
 
