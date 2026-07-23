@@ -34,43 +34,11 @@ DATASETS = {
         "license": "Creative Commons Attribution 4.0 International",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
-    "cereal": {
-        "description": "Breakfast Cereal Data",
-        "source": "American Statistical Association",
-        "creators": "1993 ASA Statistical Graphics Exposition",
-        "url": "https://community.amstat.org/stat-computing/data-expo/data-expo-1993",
-        "license": "Unknown",
-        "license_url": "Unknown",
-    },
     "churn": {
         "description": "Credit card churn dataset.",
         "source": "Kaggle",
         "creators": "Unknown",
         "url": "https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers",
-        "license": "CC0: Public Domain",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    },
-    "churn_ibm": {
-        "description": "Telecom churn dataset (IBM).",
-        "source": "IBM Public Repository",
-        "creators": "IBM",
-        "url": "https://github.com/IBM/telco-customer-churn-on-icp4d",
-        "license": "Apache 2.0",
-        "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
-    },
-    "churn_mlc": {
-        "description": "Telecom churn dataset (MLC).",
-        "source": "OpenML",
-        "creators": "Unknown",
-        "url": "https://openml.org/d/46915",
-        "license": "MIT",
-        "license_url": "https://www.mit.edu/~amini/LICENSE.md",
-    },
-    "covid": {
-        "description": "COVID-19 related dataset.",
-        "source": "European Centre for Disease Prevention and Control",
-        "creators": "European Centre for Disease Prevention and Control",
-        "url": "https://data.europa.eu/data/datasets/covid-19-coronavirus-data-daily-up-to-14-december-2020",
         "license": "CC0: Public Domain",
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     },
@@ -115,30 +83,6 @@ DATASETS = {
         "license": "GPL-3",
         "license_url": "https://cran.r-project.org/web/licenses/GPL-3",
     },
-    "gapminder": {
-        "description": "Gapminder dataset.",
-        "source": "Gapminder.org",
-        "creators": "Gapminder",
-        "url": "https://www.gapminder.org/data/",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    },
-    "hotel_city": {
-        "description": "Hotel booking demand datasets: City Hotels",
-        "source": "Data in Brief",
-        "creators": "Nuno Antonio, Ana de Almeida and Luis Nunes",
-        "url": "https://doi.org/10.1016/j.dib.2018.11.126",
-        "license": "CC BY 4.0",
-        "license_url": "http://creativecommons.org/licenses/by/4.0/",
-    },
-    "hotel_resort": {
-        "description": "Hotel booking demand datasets: Resort Hotels",
-        "source": "Data in Brief",
-        "creators": "Nuno Antonio, Ana de Almeida, and Luis Nunes",
-        "url": "https://doi.org/10.1016/j.dib.2018.11.126",
-        "license": "CC BY 4.0",
-        "license_url": "http://creativecommons.org/licenses/by/4.0/",
-    },
     "house": {
         "description": "Real Estate Valuation",
         "source": "UC Irvine Machine Learning Repository",
@@ -155,22 +99,6 @@ DATASETS = {
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
     },
-    "insurance": {
-        "description": "Insurance dataset.",
-        "source": "Kaggle",
-        "creators": "Miri Choi",
-        "url": "https://www.kaggle.com/datasets/mirichoi0218/insurance/data",
-        "license": "Database Contents License (DbCL) v1.0",
-        "license_url": "https://opendatacommons.org/licenses/dbcl/1-0/",
-    },
-    "las_vegas": {
-        "description": "The dataset consists of quantitative and qualitative features derived from online reviews of 21 hotels on the Las Vegas Strip, collected from TripAdvisor.",
-        "source": "UC Irvine Machine Learning Repository",
-        "creators": "S. Moro, P. Rita and J. Coelho",
-        "url": "https://doi.org/10.24432/C5QG7W",
-        "license": "CC BY 4.0",
-        "license_url": "http://creativecommons.org/licenses/by/4.0/",
-    },
     "loan": {
         "description": "The loan approval dataset is a collection of financial records and associated information used to determine the eligibility of individuals or organizations for obtaining loans from a lending institution.",
         "source": "Kaggle",
@@ -178,14 +106,6 @@ DATASETS = {
         "url": "https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset",
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
-    },
-    "machine_failure": {
-        "description": "Machine Failure Prediction using Sensor data",
-        "source": "Kaggle",
-        "creators": "Ume Naeem",
-        "url": "https://www.kaggle.com/datasets/umerrtx/machine-failure-prediction-using-sensor-data",
-        "license": "Apache 2.0",
-        "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
     },
     "mpg": {
         "description": "Auto MPG dataset.",
@@ -216,30 +136,6 @@ DATASETS = {
         "source": "UC Irvine Machine Learning Repository",
         "creators": "Paulo Cortez, António Cerdeira, Fernando Almeida, Telmo Matos, and José Reis",
         "url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    },
-    "vehicle": {
-        "description": "Data on car prices, obtained from Car Dekho.",
-        "source": "Kaggle",
-        "creators": "Nehal Birla, Nishant Verma and Nikhil Kushwaha",
-        "url": "https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho",
-        "license": "Database Contents License (DbCL) v1.0",
-        "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
-    },
-    "white_wines": {
-        "description": "White wine quality dataset.",
-        "source": "UC Irvine Machine Learning Repository",
-        "creators": "Paulo Cortez, António Cerdeira, Fernando Almeida, Telmo Matos, and José Reis",
-        "url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    },
-    "wholesale": {
-        "description": "Wholesale customers dataset.",
-        "source": "UC Irvine Machine Learning Repository",
-        "creators": "Margarida Cardoso",
-        "url": "https://archive.ics.uci.edu/dataset/292/wholesale+customers",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
@@ -275,7 +171,9 @@ def load(name: str) -> pd.DataFrame:
 
     try:
         csv_file = files("datadepot.data").joinpath(f"{canonical_name}.csv.gz")
-        return pd.read_csv(csv_file, sep=",", encoding="utf-8", compression="gzip")
+        return pd.read_csv(
+            csv_file, sep=",", encoding="utf-8", compression="gzip"
+        )
     except Exception as e:
         raise RuntimeError(f"Failed to load dataset '{canonical_name}': {e}")
 
@@ -331,7 +229,9 @@ def dataset_table() -> str:
     ]
 
     for name, meta in DATASETS.items():
-        table_lines.append(f"{name:<{name_width}} {meta['description']:<{desc_width}}")
+        table_lines.append(
+            f"{name:<{name_width}} {meta['description']:<{desc_width}}"
+        )
 
     return "\n".join(table_lines)
 

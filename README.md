@@ -51,32 +51,19 @@ The following datasets are included:
 - bank
 - bicycle_counts
 - bike_sharing
-- cereal
 - churn
-- churn_ibm
-- churn_mlc
-- covid
+- cpu
 - credit
 - credit_card
-- cpu
 - diamonds
 - drug
-- gapminder
-- hotel_city
-- hotel_resort
 - house
 - house_price
-- insurance
-- las_vegas
 - loan
-- machine_failure
 - mpg
 - nyc_taxi
 - online_shoppers
 - red_wines
-- vehicle
-- white_wines
-- wholesale
 
 **Documentation**
 
