@@ -22,7 +22,7 @@ authors = [
     { name = "Jeroen van Raak", email = "j.j.f.vanraak@uva.nl" }
 ]
 
-urls = { "Homepage" = "https://github.com/vanraak/datadepot" }
+urls = { "Homepage" = "https://datasciencebook.ai/datadepot" }
 
 [tool.setuptools]
 include-package-data = true

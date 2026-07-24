@@ -55,7 +55,7 @@ This displays the dataset metadata:
 - Description
 - Source
 - URL
-- Creator(s)
+- Creators
 - License
 - License URL
 
@@ -81,6 +81,8 @@ The following datasets are included:
 - online_shoppers
 - red_wines
 
+More information about each dataset is available at <https://datasciencebook.ai/datadepot>, including its description, source, creators, and license.
+
 ## License
 
-datadepot is distributed under the MIT License.
+datadepot is distributed under the MIT License. Individual datasets may be subject to different licenses; see each dataset's metadata for details.
