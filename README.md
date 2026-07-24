@@ -1,49 +1,65 @@
-# Package `datadepot`
-
-
-**Package ‘datadepot’**
-
-**Title** DataDepot
+# `datadepot`
 
 ![](https://raw.githubusercontent.com/vanraak/datadepot/main/logo_small.png)
 
+This library provides a collection of datasets used in the book *Data Science Foundations and Machine Learning with Python*.
 
-**Description**
+## Installation
 
-The **datadepot** package provides a collection of datasets used in the book `Data Science Foundations and Machine Learning with Python`.
+Install datadepot with pip:
 
-**URL** <https://github.com/vanraak/datadepot>
+```bash
+pip install datadepot
+```
 
-**Depends** Python (\>= 3.10) and Pandas (\>2.0)
+or with conda:
 
-**License** GPL (\>= 2)
+```bash
+conda install conda-forge::datadepot
+```
 
-**Repository** Pypi
+## Usage
 
-**Author** Jeroen van Raak
+Import datadepot and load a dataset:
 
-**NeedsCompilation** no
+```python
+import datadepot
 
-**Installation**
+df = datadepot.load("<dataset>")
+```
 
-    pip install datadepot
+Replace `<dataset>` with the name of the dataset you want to load. For example:
 
-    or:
+```python
+df = datadepot.load("bank")
+```
 
-    conda install conda-forge::datadepot
+The returned object is a pandas DataFrame.
 
-**Usage**
+## Dataset Information
 
-    import datadepot
-    df=datadepot.load("<dataset>")
+View metadata for any dataset:
 
-Replace <dataset> with the name of the dataset, such as "bank", "house", or "churn".
+```python
+datadepot.info("<dataset>")
+```
 
-**Example**
+Example:
 
-    df=datadepot.load('bank') # Load the bank dataset.
+```python
+datadepot.info("diamonds")
+```
 
-**Datasets**
+This displays the dataset metadata:
+
+- Description
+- Source
+- URL
+- Creator(s)
+- License
+- License URL
+
+## Available Datasets
 
 The following datasets are included:
 
@@ -65,7 +81,6 @@ The following datasets are included:
 - online_shoppers
 - red_wines
 
-**Documentation**
+## License
 
-The full documentation is available at:
-<https://github.com/vanraak/datadepot/blob/main/README.pdf>
+datadepot is distributed under the MIT License.

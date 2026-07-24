@@ -29,7 +29,7 @@ DATASETS = {
     "bike_sharing": {
         "description": "Seoul Bike Sharing Demand dataset.",
         "source": "UC Irvine Machine Learning Repository",
-        "creators": "Unknown",
+        "creators": "Seoul Open Data Plaza",
         "url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
         "license": "Creative Commons Attribution 4.0 International",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
@@ -37,15 +37,15 @@ DATASETS = {
     "churn": {
         "description": "Credit card churn dataset.",
         "source": "Kaggle",
-        "creators": "Unknown",
+        "creators": "Sakshi Goyal (Kaggle contributor)",
         "url": "https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers",
         "license": "CC0: Public Domain",
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     },
     "cpu": {
         "description": "Dataset of CPU pricing and performance characteristics.",
-        "source": "DataDepot",
-        "creators": "-",
+        "source": "datadepot",
+        "creators": "Jeroen van Raak (data compilation)",
         "url": "https://github.com/vanraak/datadepot",
         "license": "CC BY 4.0",
         "license_url": "http://creativecommons.org/licenses/by/4.0/",
@@ -69,7 +69,7 @@ DATASETS = {
     "diamonds": {
         "description": "Diamonds dataset",
         "source": "ggplot2 package",
-        "creators": "Unknown",
+        "creators": "Loose Diamonds Search Engine",
         "url": "https://ggplot2.tidyverse.org/reference/diamonds.html",
         "license": "MIT",
         "license_url": "https://ggplot2.tidyverse.org/LICENSE.html",
@@ -102,7 +102,7 @@ DATASETS = {
     "loan": {
         "description": "The loan approval dataset is a collection of financial records and associated information used to determine the eligibility of individuals or organizations for obtaining loans from a lending institution.",
         "source": "Kaggle",
-        "creators": "Unknown",
+        "creators": "Archit Sharma (Kaggle contributor)",
         "url": "https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset",
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
@@ -171,9 +171,7 @@ def load(name: str) -> pd.DataFrame:
 
     try:
         csv_file = files("datadepot.data").joinpath(f"{canonical_name}.csv.gz")
-        return pd.read_csv(
-            csv_file, sep=",", encoding="utf-8", compression="gzip"
-        )
+        return pd.read_csv(csv_file, sep=",", encoding="utf-8", compression="gzip")
     except Exception as e:
         raise RuntimeError(f"Failed to load dataset '{canonical_name}': {e}")
 
@@ -211,8 +209,8 @@ def info(name: str, return_dict: bool = False) -> dict | None:
     print(line)
     print(f"{'Description':<{width}}: {meta.get('description','')}")
     print(f"{'Source':<{width}}: {meta.get('source','')}")
-    print(f"{'Creators':<{width}}: {meta.get('creators','')}")
     print(f"{'URL':<{width}}: {meta.get('url','')}")
+    print(f"{'Creators':<{width}}: {meta.get('creators','')}")
     print(f"{'License':<{width}}: {meta.get('license','')}")
     print(f"{'License URL':<{width}}: {meta.get('license_url','')}")
     print(line)
@@ -229,9 +227,7 @@ def dataset_table() -> str:
     ]
 
     for name, meta in DATASETS.items():
-        table_lines.append(
-            f"{name:<{name_width}} {meta['description']:<{desc_width}}"
-        )
+        table_lines.append(f"{name:<{name_width}} {meta['description']:<{desc_width}}")
 
     return "\n".join(table_lines)
 
