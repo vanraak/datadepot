@@ -11,7 +11,7 @@ requires-python = ">=3.10"
 license = { file = "LICENSE" }
 dependencies = [
     "pandas>=2.2",
-    "numpy>=1.26",
+    "numpy>=2.0",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -38,13 +38,14 @@ write_to = "datadepot/_version.py"
 
 [project.optional-dependencies]
 all = [
-    "scikit-learn>=1.3",
-    "geopandas>=1.0",
+    "scikit-learn>=1.6",
+    "geopandas>=1.1",
     "tensorflow>=2.18",
-    "matplotlib",
-    "seaborn",
+    "matplotlib>=3.10",
+    "seaborn>=0.13",
     "openpyxl",
-    "scipy>=1.10",
+    "scipy>=1.16",
     "statsmodels>=0.14",
     "imbalanced-learn",
+    "patsy>=1.0.2",
 ]
