@@ -1,30 +1,36 @@
-# __init__.py
 from ._version import __version__
-from .datasets import load, dataset_table, info, load_zones
+from .core import load, dataset_table, list_datasets, info, load_zones
 
 
 def version():
-    """Prints DataDepot package version."""
-    print(f"Version: {__version__}")
+    """Return DataDepot package version."""
+    return __version__
 
 
-__all__ = ["load", "dataset_table", "info", "version"]
+__all__ = [
+    "load",
+    "dataset_table",
+    "info",
+    "version",
+    "load_zones",
+]
 
-# Dynamic package docstring with available datasets
+
 __doc__ = f"""
 DataDepot package: Example datasets for Python users
 
 Available datasets:
 {dataset_table()}
 
-# Load a dataset from the DataDepot package as a pandas DataFrame
+# Load a dataset as a pandas DataFrame
 >>> import datadepot
->>> df = datadepot.load('<dataset_name>')  # Load dataset
+>>> df = datadepot.load('<dataset_name>')
 
 # Show dataset info and metadata:
->>> datadepot.info('<dataset_name>')       # Pretty-print dataset metadata
->>> meta = datadepot.info('<dataset_name>', return_dict=True)  # Get dict
+>>> datadepot.info('<dataset_name>')
+>>> meta = datadepot.info('<dataset_name>', return_dict=True)
 
 # Show the version of the DataDepot library:
->>> datadepot.version()  # DataDepot version {__version__}
+>>> datadepot.version()
+'{__version__}'
 """

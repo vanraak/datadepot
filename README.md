@@ -70,7 +70,7 @@ The following datasets are included:
 - churn
 - cpu
 - credit
-- credit_card
+- creditcard
 - diamonds
 - drug
 - house
