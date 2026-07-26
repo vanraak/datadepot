@@ -63,7 +63,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "creditcard": {
-        "loader": "openml",
+        "loader": "csv",
         "description": "Anonymized credit card transactions labeled as fraudulent or genuine",
         "source": "Kaggle",
         "creators": "Machine Learning Group - ULB",
