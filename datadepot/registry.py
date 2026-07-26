@@ -72,7 +72,7 @@ DATASETS = {
         "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
     },
     "diamonds": {
-        "loader": "seaborn",
+        "loader": "csv",
         "description": "Diamonds dataset",
         "source": "ggplot2 package",
         "creators": "Loose Diamonds Search Engine",
