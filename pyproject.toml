@@ -48,4 +48,5 @@ all = [
     "statsmodels>=0.14",
     "imbalanced-learn",
     "patsy>=1.0.2",
+    "xgboost>=3.4.1",
 ]
