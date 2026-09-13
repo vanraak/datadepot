@@ -7,20 +7,19 @@ def load(name: str) -> pd.DataFrame:
     canonical_name = _lookup_name(name)
     meta = DATASETS[canonical_name]
 
+    if meta["loader"] == "tensorflow":
+        raise ValueError(
+            f"Dataset '{canonical_name}' can be loaded directly through Keras datasets."
+        )
 
-if meta["loader"] == "tensorflow":
-    raise ValueError(
-        f"Dataset '{canonical_name}' can be loaded directly through Keras datasets."
-    )
+        path = files("datadepot.data").joinpath(f"{canonical_name}.csv.gz")
 
-    path = files("datadepot.data").joinpath(f"{canonical_name}.csv.gz")
-
-    return pd.read_csv(
-        path,
-        sep=",",
-        encoding="utf-8",
-        compression="gzip",
-    )
+        return pd.read_csv(
+            path,
+            sep=",",
+            encoding="utf-8",
+            compression="gzip",
+        )
 
 
 def info(name: str, return_dict: bool = False) -> dict | None:

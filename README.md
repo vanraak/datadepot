@@ -65,7 +65,6 @@ The following datasets are included:
 
 - adult
 - bank
-- bicycle_counts
 - bike_sharing
 - churn
 - cpu
