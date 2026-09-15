@@ -7,7 +7,7 @@ name = "datadepot"
 dynamic = ["version"]
 description = "The datadepot library provides a collection of datasets used in the book Data Science Foundations and Machine Learning with Python."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12,<3.14"
 license = { file = "LICENSE" }
 dependencies = [
     "pandas>=2.2",
