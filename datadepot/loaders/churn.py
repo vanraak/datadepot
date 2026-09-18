@@ -47,4 +47,16 @@ def load_churn() -> pd.DataFrame:
         {"Existing Customer": "no", "Attrited Customer": "yes"}
     )
 
+    df = df.replace("Unknown", "unknown")
+
+    df["income"] = df["income"].replace(
+        {
+            "Less than $40K": "<40K",
+            "$40K - $60K": "40K-60K",
+            "$60K - $80K": "60K-80K",
+            "$80K - $120K": "80K-120K",
+            "$120K +": ">120K",
+        }
+    )
+
     return df
