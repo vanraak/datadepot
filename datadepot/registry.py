@@ -90,6 +90,15 @@ DATASETS = {
         "license": "MIT",
         "license_url": "https://opensource.org/license/mit/",
     },
+    "hotel_booking": {
+        "loader": "Kaggle",
+        "description": "City hotel booking demand dataset, including completed and cancelled reservations.",
+        "source": "Hotel Booking Demand Datasets",
+        "creators": "Nuno Antonio, Ana de Almeida, and Luis Nunes",
+        "url": "https://doi.org/10.1016/j.dib.2018.11.126",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    },
     "house": {
         "loader": "UCI ML Repository",
         "description": "Real Estate Valuation",
