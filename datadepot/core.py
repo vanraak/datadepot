@@ -1,25 +1,26 @@
 import pandas as pd
 from importlib.resources import files
 from .registry import DATASETS
+from importlib import import_module
 
 
-def load(name: str) -> pd.DataFrame:
+def load(name: str) -> pd.DataFrame | tuple[pd.DataFrame, pd.DataFrame]:
     canonical_name = _lookup_name(name)
-    meta = DATASETS[canonical_name]
 
-    if meta["loader"] == "tensorflow":
+    module = import_module(
+        f".loaders.{canonical_name}",
+        package=__package__,
+    )
+
+    loader_name = f"load_{canonical_name}"
+    loader = getattr(module, loader_name, None)
+
+    if loader is None:
         raise ValueError(
-            f"Dataset '{canonical_name}' can be loaded directly through Keras datasets."
+            f"No loader is available for dataset '{canonical_name}'."
         )
 
-    path = files("datadepot.data").joinpath(f"{canonical_name}.csv.gz")
-
-    return pd.read_csv(
-        path,
-        sep=",",
-        encoding="utf-8",
-        compression="gzip",
-    )
+    return loader()
 
 
 def info(name: str, return_dict: bool = False) -> dict | None:
@@ -57,10 +58,7 @@ def info(name: str, return_dict: bool = False) -> dict | None:
     print(f"{'Source':<{width}}: {meta.get('source','')}")
     print(f"{'URL':<{width}}: {meta.get('url','')}")
     print(f"{'Creators':<{width}}: {meta.get('creators','')}")
-    if meta.get("loader") == "csv":
-        hosted_by = "datadepot"
-    else:
-        hosted_by = meta.get("hosted_by", meta.get("loader", ""))
+    hosted_by = meta.get("hosted_by", meta.get("loader", ""))
     print(f"{'Hosted by':<{width}}: {hosted_by}")
     print(f"{'License':<{width}}: {meta.get('license','')}")
     print(f"{'License URL':<{width}}: {meta.get('license_url','')}")

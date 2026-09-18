@@ -1,6 +1,6 @@
 DATASETS = {
     "adult": {
-        "loader": "csv",
+        "loader": "UCI ML Repository",
         "description": "Adult census income dataset.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "Barry Becker and Ronny Kohavi",
@@ -9,7 +9,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "bank": {
-        "loader": "csv",
+        "loader": "UCI ML Repository",
         "description": "Bank marketing dataset.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "S. Moro, P. Rita and P. Cortez",
@@ -18,7 +18,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "bike_sharing": {
-        "loader": "csv",
+        "loader": "UCI ML Repository",
         "description": "Seoul Bike Sharing Demand dataset.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "Seoul Open Data Plaza",
@@ -27,7 +27,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "churn": {
-        "loader": "csv",
+        "loader": "Kaggle",
         "description": "Credit card churn dataset.",
         "source": "Kaggle",
         "creators": "Sakshi Goyal (Kaggle contributor)",
@@ -36,7 +36,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     },
     "cpu": {
-        "loader": "csv",
+        "loader": "Web-scraped data",
         "description": "Dataset of CPU pricing and performance characteristics.",
         "source": "datadepot",
         "creators": "Jeroen van Raak (data compilation)",
@@ -45,7 +45,7 @@ DATASETS = {
         "license_url": "http://creativecommons.org/licenses/by/4.0/",
     },
     "credit": {
-        "loader": "csv",
+        "loader": "datadepot",
         "description": "700 good and 300 bad credits with 20 predictor variables. Data from 1973 to 1975.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "Hans Hofmann",
@@ -54,16 +54,16 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "creditcard": {
-        "loader": "csv",
+        "loader": "Hugging Face",
         "description": "Anonymized credit card transactions labeled as fraudulent or genuine",
         "source": "Kaggle",
-        "creators": "Machine Learning Group - ULB",
+        "creators": "ULB Machine Learning Group and Worldline",
         "url": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
         "license": "Database Contents License (DbCL) v1.0",
         "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
     },
     "diamonds": {
-        "loader": "csv",
+        "loader": "Seaborn",
         "description": "Diamonds dataset",
         "source": "ggplot2 package",
         "creators": "Loose Diamonds Search Engine",
@@ -73,7 +73,7 @@ DATASETS = {
         "citation": "Wickham H (2016). ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. ISBN 978-3-319-24277-4",
     },
     "drug": {
-        "loader": "csv",
+        "loader": "datadepot",
         "description": "Drug classification dataset.",
         "source": "liver - R Package",
         "creators": "Reza Mohammadi",
@@ -82,7 +82,7 @@ DATASETS = {
         "license_url": "https://cran.r-project.org/web/licenses/GPL-3",
     },
     "fashion_mnist": {
-        "loader": "tensorflow",
+        "loader": "TensorFlow/Keras",
         "description": "Fashion image classification dataset.",
         "source": "Zalando Research",
         "creators": "Zalando Research",
@@ -91,7 +91,7 @@ DATASETS = {
         "license_url": "https://opensource.org/license/mit/",
     },
     "house": {
-        "loader": "csv",
+        "loader": "UCI ML Repository",
         "description": "Real Estate Valuation",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "I-Cheng Yeh",
@@ -100,16 +100,25 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "house_price": {
-        "loader": "csv",
-        "description": "House price dataset.",
-        "source": "Kaggle",
+        "loader": "datadepot",
+        "description": "House price dataset",
+        "source": "Ames Housing dataset / Kaggle",
         "creators": "Dean De Cock",
         "url": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data",
         "license": "MIT",
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
     },
+    "imdb": {
+        "loader": "Hugging Face",
+        "description": "Sentiment-classification dataset containing 50,000 IMDb movie reviews.",
+        "source": "Stanford Large Movie Review Dataset (aclImdb)",
+        "creators": "Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, and Christopher Potts",
+        "url": "https://ai.stanford.edu/~amaas/data/sentiment/",
+        "license": "Other",
+        "license_url": "",
+    },
     "loan": {
-        "loader": "csv",
+        "loader": "Kaggle",
         "description": "The loan approval dataset is a collection of financial records and associated information used to determine the eligibility of individuals or organizations for obtaining loans from a lending institution.",
         "source": "Kaggle",
         "creators": "Archit Sharma (Kaggle contributor)",
@@ -118,7 +127,7 @@ DATASETS = {
         "license_url": "https://www.mit.edu/~amini/LICENSE.md",
     },
     "mnist": {
-        "loader": "tensorflow",
+        "loader": "TensorFlow/Keras",
         "description": "Handwritten digit classification dataset.",
         "source": "MNIST database",
         "creators": "Y. LeCun, C. Cortes and C. J. C. Burges",
@@ -127,7 +136,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
     },
     "mpg": {
-        "loader": "csv",
+        "loader": "Seaborn",
         "description": "Auto MPG dataset.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "R. Quinlan",
@@ -136,7 +145,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "nyc_taxi": {
-        "loader": "csv",
+        "loader": "datadepot",
         "description": "NYC Yellow Taxi Zones dataset.",
         "source": "NYC TLC Trip Record Data",
         "creators": "NYC Taxi & Limousine Commission",
@@ -145,7 +154,7 @@ DATASETS = {
         "license_url": "https://www.nyc.gov/main/terms-of-use",
     },
     "online_shoppers": {
-        "loader": "csv",
+        "loader": "UCI ML Repository",
         "description": "Online Shoppers Purchasing Intention dataset.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "C. Sakar and Y. Kastro",
@@ -154,7 +163,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "red_wines": {
-        "loader": "csv",
+        "loader": "UCI ML Repository",
         "description": "Red wine quality dataset.",
         "source": "UC Irvine Machine Learning Repository",
         "creators": "Paulo Cortez, António Cerdeira, Fernando Almeida, Telmo Matos, and José Reis",
