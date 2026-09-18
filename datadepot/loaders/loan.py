@@ -1,4 +1,4 @@
-import kagglehub
+from ._kaggle import kagglehub
 import pandas as pd
 
 

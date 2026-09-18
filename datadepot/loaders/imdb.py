@@ -1,10 +1,18 @@
 import pandas as pd
-from huggingface_hub import hf_hub_download
-from huggingface_hub.utils import (
-    are_progress_bars_disabled,
-    disable_progress_bars,
-    enable_progress_bars,
-)
+import warnings
+
+with warnings.catch_warnings():
+    warnings.filterwarnings(
+        "ignore",
+        message="IProgress not found.*",
+    )
+
+    from huggingface_hub import hf_hub_download
+    from huggingface_hub.utils import (
+        are_progress_bars_disabled,
+        disable_progress_bars,
+        enable_progress_bars,
+    )
 
 
 def _hf_download(**kwargs) -> str:

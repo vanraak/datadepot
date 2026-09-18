@@ -54,7 +54,7 @@ DATASETS = {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
     },
     "creditcard": {
-        "loader": "Hugging Face",
+        "loader": "Kaggle",
         "description": "Anonymized credit card transactions labeled as fraudulent or genuine",
         "source": "Kaggle",
         "creators": "ULB Machine Learning Group and Worldline",
