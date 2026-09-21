@@ -8,4 +8,7 @@ def load_adult() -> pd.DataFrame:
 
     df.columns = df.columns.str.lower().str.strip().str.replace("-", "_")
 
+    df["income"] = df["income"].str.replace("<=50K.", "<=50K")
+    df["income"] = df["income"].str.replace(">50K.", ">50K")
+
     return df

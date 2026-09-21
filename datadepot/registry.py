@@ -62,6 +62,15 @@ DATASETS = {
         "license": "Database Contents License (DbCL) v1.0",
         "license_url": "http://opendatacommons.org/licenses/dbcl/1.0/",
     },
+    "credit_default": {
+        "loader": "UCI ML Repository",
+        "description": "Default of Credit Card Clients Dataset",
+        "source": "UC Irvine Machine Learning Repository",
+        "creators": "I-Cheng Yeh",
+        "url": "https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients",
+        "license": "Creative Commons Attribution 4.0 International",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    },
     "diamonds": {
         "loader": "Seaborn",
         "description": "Diamonds dataset",
