@@ -8,7 +8,7 @@ def load_hotel_booking() -> pd.DataFrame:
         path="hotel_bookings.csv",
     )
 
-    df = pd.read_csv(path, compression="zip")
+    df = pd.read_csv(path)
 
     return (
         df.loc[df["hotel"] == "City Hotel"]

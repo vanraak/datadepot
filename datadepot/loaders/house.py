@@ -3,8 +3,20 @@ from ucimlrepo import fetch_ucirepo
 
 
 def load_house() -> pd.DataFrame:
-    real_estate_valuation = fetch_ucirepo(id=477)
-    df = real_estate_valuation.data.original.copy()
+    try:
+        real_estate_valuation = fetch_ucirepo(id=477)
+        df = real_estate_valuation.data.original.copy()
+
+    except Exception:
+        from io import BytesIO
+        import requests
+        
+        url = "https://archive.ics.uci.edu/static/public/477/data.csv"
+
+        r = requests.get(url, timeout=30)
+        r.raise_for_status()
+
+        df = pd.read_csv(BytesIO(r.content))
 
     df = df.rename(
         columns={

@@ -15,7 +15,6 @@ def load_creditcard() -> pd.DataFrame:
             "mlg-ulb/creditcardfraud",
             path="creditcard.csv",
         )
-        compression = "zip"
 
     except Exception:
         path = _hf_download(
@@ -23,11 +22,12 @@ def load_creditcard() -> pd.DataFrame:
             repo_type="dataset",
             filename="creditcard.csv",
         )
-        compression = None
 
-    df = pd.read_csv(path, compression=compression)
+    df = pd.read_csv(path)
 
     df.columns = df.columns.str.lower().str.strip()
     df = df.rename(columns={"class": "fraud"})
 
     return df
+
+

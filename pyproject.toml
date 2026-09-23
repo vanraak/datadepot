@@ -7,7 +7,7 @@ name = "datadepot"
 dynamic = ["version"]
 description = "The datadepot library provides a collection of datasets used in the book Data Science Foundations and Machine Learning with Python."
 readme = "README.md"
-requires-python = ">=3.12,<3.14"
+requires-python = ">=3.12,<3.15"
 license = { file = "LICENSE" }
 dependencies = [
     "pandas>=2.2",
@@ -45,12 +45,12 @@ write_to = "datadepot/_version.py"
 all = [
     "scikit-learn>=1.6",
     "geopandas>=1.1",
-    "tensorflow>=2.18",
+    "keras>=3",
+    "torch",
     "matplotlib>=3.10",
     "openpyxl",
     "scipy>=1.16",
     "statsmodels>=0.14",
     "imbalanced-learn",
     "patsy>=1.0.2",
-    "xgboost>=3.4.1",
 ]

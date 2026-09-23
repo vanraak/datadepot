@@ -8,10 +8,7 @@ def load_churn() -> pd.DataFrame:
         path="BankChurners.csv",
     )
 
-    df = pd.read_csv(
-        path,
-        compression="zip",
-    )
+    df = pd.read_csv(path)
 
     df.columns = df.columns.str.lower().str.strip()
 
