@@ -2,7 +2,7 @@ import pandas as pd
 from ucimlrepo import fetch_ucirepo
 
 
-def load_bank() -> pd.DataFrame:
+def load_bank_marketing() -> pd.DataFrame:
     try:
         bank_marketing = fetch_ucirepo(id=222)
         df = bank_marketing.data.original.copy()

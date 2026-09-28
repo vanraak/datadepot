@@ -7,8 +7,8 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from ..core import load
 
 
-def prepare_bank_knn():
-    df = load("bank")
+def prepare_bank_marketing_knn():
+    df = load("bank_marketing")
 
     X = df[
         [

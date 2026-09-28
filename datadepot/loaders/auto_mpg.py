@@ -1,7 +1,6 @@
 import pandas as pd
 
-
-def load_mpg() -> pd.DataFrame:
+def load_auto_mpg() -> pd.DataFrame:
     try:
         import seaborn as sns
         return sns.load_dataset("mpg")

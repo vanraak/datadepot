@@ -2,7 +2,7 @@ import pandas as pd
 from ucimlrepo import fetch_ucirepo
 
 
-def load_adult() -> pd.DataFrame:
+def load_adult_income() -> pd.DataFrame:
     try:
         adult = fetch_ucirepo(id=2)
         df = adult.data.original.copy()

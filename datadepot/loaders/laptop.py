@@ -1,9 +1,8 @@
 import pandas as pd
 from importlib.resources import files
 
-
-def load_credit() -> pd.DataFrame:
-    path = files("datadepot.data").joinpath(f"credit.csv.gz")
+def load_laptop() -> pd.DataFrame:
+    path = files("datadepot.data").joinpath(f"laptop.csv.gz")
 
     return pd.read_csv(
         path,

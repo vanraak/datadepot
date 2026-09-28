@@ -9,7 +9,7 @@ from huggingface_hub.utils import (
 from ._kaggle import kagglehub
 
 
-def load_creditcard() -> pd.DataFrame:
+def load_credit_card_fraud() -> pd.DataFrame:
     try:
         path = kagglehub.dataset_download(
             "mlg-ulb/creditcardfraud",

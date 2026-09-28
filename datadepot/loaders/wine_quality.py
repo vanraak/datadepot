@@ -2,7 +2,7 @@ import pandas as pd
 from ucimlrepo import fetch_ucirepo
 
 
-def load_red_wines() -> pd.DataFrame:
+def load_wine_quality() -> pd.DataFrame:
     try:
         wine_quality = fetch_ucirepo(id=186)
         df = wine_quality.data.original.copy()

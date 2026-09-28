@@ -2,7 +2,7 @@ import pandas as pd
 from ucimlrepo import fetch_ucirepo
 
 
-def load_house() -> pd.DataFrame:
+def load_real_estate() -> pd.DataFrame:
     try:
         real_estate_valuation = fetch_ucirepo(id=477)
         df = real_estate_valuation.data.original.copy()
