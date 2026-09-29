@@ -2,7 +2,7 @@
 
 ![](https://raw.githubusercontent.com/vanraak/datadepot/main/logo_small.png)
 
-This library provides a collection of datasets used in the book *Data Science Foundations and Machine Learning with Python*.
+This library  provides a simple interface for loading datasets used in the book *Data Science Foundations and Machine Learning with Python*.
 
 ## Installation
 
@@ -31,10 +31,10 @@ df = datadepot.load("<dataset>")
 Replace `<dataset>` with the name of the dataset you want to load. For example:
 
 ```python
-df = datadepot.load("bank")
+df = datadepot.load("bank_marketing")
 ```
 
-The returned object is a pandas DataFrame.
+The return format depends on the dataset. Some datasets return a single DataFrame, while others return train/test splits or other structured data.
 
 ## Dataset Information
 
@@ -61,24 +61,27 @@ This displays the dataset metadata:
 
 ## Available Datasets
 
-The following datasets are included:
+The following datasets can be loaded:
 
-- adult
-- bank
+- adult_income
+- auto_mpg
+- bank_marketing
 - bike_sharing
 - churn
 - cpu
-- credit
-- creditcard
+- credit_card_fraud
+- credit_default
 - diamonds
-- drug
-- house
-- house_price
-- loan
-- mpg
+- fashion_mnist
+- hotel_booking
+- imdb
+- laptop
+- loan_approval
+- mnist
 - nyc_taxi
 - online_shoppers
-- red_wines
+- real_estate
+- wine_quality
 
 More information about each dataset is available at <https://datasciencebook.ai/datadepot>, including its description, source, creators, and license.
 
