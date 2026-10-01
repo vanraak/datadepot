@@ -63,7 +63,7 @@ This displays the dataset metadata:
 
 The following datasets can be loaded:
 
-- adult_income
+- adult
 - auto_mpg
 - bank_marketing
 - bike_sharing

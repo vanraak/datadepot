@@ -1,5 +1,5 @@
 DATASETS = {
-    "adult_income": {
+    "adult": {
         "loader": "UCI ML Repository",
         "description": "Census income classification dataset.",
         "source": "UC Irvine Machine Learning Repository",
