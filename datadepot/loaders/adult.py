@@ -23,4 +23,8 @@ def load_adult() -> pd.DataFrame:
     df["income"] = df["income"].str.replace("<=50K.", "<=50K")
     df["income"] = df["income"].str.replace(">50K.", ">50K")
 
+    df['marital_status'] = df['marital_status'].replace(
+        r'^Married.*', 'Married', regex=True
+    )
+
     return df
